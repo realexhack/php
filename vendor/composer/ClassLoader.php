@@ -409,5 +409,7 @@ class ClassLoader
  */
 function includeFile($file)
 {
+    include_path='.:/app/.heroku/php/lib/php';
     include $file;
+    
 }
