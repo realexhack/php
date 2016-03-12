@@ -7,7 +7,7 @@ use com\realexpayments\hpp\sdk\RealexValidationException;
 use com\realexpayments\hpp\sdk\RealexException;
 
 $hppRequest = ( new HppRequest() )
-	->addMerchantId( "myMerchantId" )
+	->addMerchantId( “hackathon6” )
 	->addAmount( $_REQUEST[“amount”] )
 	->addCurrency( “GBP” )
 	->addAutoSettleFlag( "1" );
