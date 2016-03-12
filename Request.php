@@ -1,6 +1,6 @@
 <?php
-echo('test');
-exit();
+//echo('test');
+//exit();
 
 require_once ('vendor/autoload.php');
 
@@ -11,7 +11,7 @@ use com\realexpayments\hpp\sdk\RealexException;
 
 $hppRequest = ( new HppRequest() )
 	->addMerchantId( "hackathon6" )
-	->addAmount( $_POST["amount"] )
+	->addAmount( 100 )//$_POST["amount"] )
 	->addCurrency( "GBP" )
 	->addAutoSettleFlag( "1" );
 
