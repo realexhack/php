@@ -8,7 +8,7 @@ use com\realexpayments\hpp\sdk\RealexException;
 
 $hppRequest = ( new HppRequest() )
 	->addMerchantId( “hackathon6” )
-	->addAmount( $_REQUEST[“amount”] )
+	->addAmount( $_POST[“amount”] )
 	->addCurrency( “GBP” )
 	->addAutoSettleFlag( "1" );
 
